@@ -1,5 +1,5 @@
 import 'package:first_application/logo_page.dart';
-
+import 'package:first_application/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,8 @@ class first_apps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: logo_page(),
+      
+      home: login_page(),
     );
   }
 }
