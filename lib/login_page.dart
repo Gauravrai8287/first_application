@@ -63,13 +63,57 @@ class login_page extends StatelessWidget {
                         )
                       ),
                     ),
-                    ),SizedBox(
+                    ),
+                    SizedBox(
                       height: 20,
                       
                     ),
-                    
-                                          
-              ],
+                Container(
+                  margin: EdgeInsets.only(left: 25,right: 25),
+                  height: 50,
+                  child:SizedBox(
+                  height: 35,
+                  width: double.infinity,
+                  child: ElevatedButton(onPressed: (){}, child: Text(
+                  ' Login ',style: TextStyle(
+                    fontWeight: FontWeight.w500,
+                    fontSize:20, 
+                    color: Color.fromRGBO(255, 255,255, 100)
+                  ),
+                  ),style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromRGBO(26, 101, 60, 76),
+                  ),)
+                    ,
+                ),
+                ),
+                 SizedBox(
+                      height: 20,
+                      
+                    ),
+                    Container(
+                      
+                      
+                      child: Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                        Text(
+                          'Don’t have an account?'
+                        ),
+                        GestureDetector(onTap: (){},
+                        child: Text('Sign Up',
+                         style: TextStyle(
+                          fontWeight: FontWeight.w600
+                         ),
+                         ),
+                         )
+                      ]
+                      ),
+                      )
+                      ,
+                    ),
+
+                    ],
             ) ,
            ), ),
       ),
