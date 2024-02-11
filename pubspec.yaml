@@ -52,6 +52,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter pac
 flutter:
+  uses-material-design: true 
   assets:
     - assets/
     

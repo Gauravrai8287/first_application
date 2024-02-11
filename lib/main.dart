@@ -1,5 +1,6 @@
 import 'package:first_application/logo_page.dart';
 import 'package:first_application/login_page.dart';
+import 'package:first_application/sign_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class first_apps extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       
-      home: login_page(),
+      home: sign_page(),
     );
   }
 }
