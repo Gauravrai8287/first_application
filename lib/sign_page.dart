@@ -8,7 +8,7 @@ class sign_page extends StatelessWidget {
       body: Material(
         child:Container(
           child:Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          
             children: 
             [
 
