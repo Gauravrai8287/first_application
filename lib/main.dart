@@ -1,3 +1,4 @@
+import 'package:first_application/domain_page.dart';
 import 'package:first_application/home_page.dart';
 import 'package:first_application/logo_page.dart';
 import 'package:first_application/login_page.dart';
@@ -14,7 +15,7 @@ class first_apps extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       
-      home: home_page(),
+      home: domain_page(),
     );
   }
 }

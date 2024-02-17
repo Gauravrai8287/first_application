@@ -45,8 +45,7 @@ class login_page extends StatelessWidget {
                     ),
                     SizedBox(
                       height: 20,
-                      
-                    ),
+                     ),
                     Container(
                       padding: EdgeInsets.only( left: 15,right: 15),
                       child: TextField(
