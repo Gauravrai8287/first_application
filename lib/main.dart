@@ -14,8 +14,11 @@ class first_apps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+
+      home:logo_page() ,
+    
       
-      home: domain_page(),
+      
     );
   }
 }

@@ -1,3 +1,4 @@
+import 'package:first_application/domain_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 
@@ -54,7 +55,12 @@ class home_page extends StatelessWidget {
                       height: 100,
                       width: 150,
                       child: MaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => domain_page()));
+                        },
                         child: Text(
                           'Govt. Policy',
                           style: TextStyle(
@@ -128,22 +134,19 @@ class home_page extends StatelessWidget {
             ],
           ),
         ),
-      )
-      ,
-      bottomNavigationBar:  BottomNavigationBar(
-                items:const<BottomNavigationBarItem> [
- 
- BottomNavigationBarItem(
-                        icon: Icon(Icons.home),
-                        label: 'Home',
-
-                    ),
-                    BottomNavigationBarItem(
-                        icon: Icon(Icons.add_alarm_rounded),
-                        label: 'Notification',
-
-                    )],
-    ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_alarm_rounded),
+            label: 'Notification',
+          )
+        ],
+      ),
     );
   }
 }
