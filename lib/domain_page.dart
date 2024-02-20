@@ -1,3 +1,4 @@
+import 'package:first_application/policypraph_page.dart';
 import 'package:flutter/material.dart';
 
 class domain_page extends StatelessWidget {
@@ -21,7 +22,7 @@ class domain_page extends StatelessWidget {
                     },
                     icon: Icon(
                       Icons.arrow_back,
-                      size: 30,
+                      size: 40,
                     )),
               ],
             ),
@@ -126,10 +127,10 @@ class domain_page extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>policygraph_page()));
                   },
                   child: Text(
-                    ' Login ',
+                    ' Upload ',
                     style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 20,
